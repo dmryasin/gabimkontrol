@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec.backup
+
+# Build çıktıları
+build/
+dist/
+installer_output/
+*.exe
+!GabimKontrolProgram.exe
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Test dosyaları
+test_*.xlsx
+*_düzeltilmiş.xlsx
+*_değişiklik_raporu.txt
+
+# Logs
+*.log
+
+# Geçici dosyalar
+*.tmp
+~$*.xlsx
+~$*.xls

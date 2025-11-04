@@ -1,0 +1,162 @@
+================================================================================
+                        GABİM KONTROL PROGRAMI
+                      HIZLI BAŞLANGIÇ KILAVUZU
+================================================================================
+
+                   A.R.E.A. GAYRİMENKUL DEĞERLEME VE
+                      DANIŞMANLIK A.Ş.
+
+================================================================================
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  KULLANICI İÇİN (Python Gerektirmez)                                     █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+1. GabimKontrolProgram.exe dosyasını çift tıklayın
+2. "Excel Dosyası Seç" butonuna tıklayın
+3. İşlemek istediğiniz Excel dosyasını seçin
+4. "Kontrolleri Başlat" butonuna tıklayın
+5. İşlem bittiğinde, aynı klasörde 2 yeni dosya oluşur:
+   - dosyaadi_düzeltilmiş.xlsx (düzeltilmiş Excel)
+   - dosyaadi_değişiklik_raporu.txt (yapılan değişikliklerin listesi)
+
+TAMAM! Bu kadar basit.
+
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  GELİŞTİRİCİ İÇİN (EXE Dosyası Oluşturma)                                █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+=== YÖNTEM 1: HIZLI BUILD (ÖNERİLEN) ===
+
+1. Komut satırını açın (CMD)
+2. Program klasörüne gidin:
+   cd C:\Users\muhas\OneDrive\Desktop\GABİM
+
+3. Çalıştırın:
+   basit_build.bat
+
+4. İşlem bitince şu dosya oluşur:
+   dist\GabimKontrolProgram.exe
+
+5. Bu EXE dosyasını istediğiniz bilgisayara kopyalayın ve çalıştırın!
+
+
+=== YÖNTEM 2: PROFESYONEL BUILD (SETUP DOSYASI İLE) ===
+
+Ön Gereksinim: Inno Setup 6 yüklü olmalı
+İndirme: https://jrsoftware.org/isdl.php
+
+1. Komut satırını açın (CMD)
+2. Program klasörüne gidin:
+   cd C:\Users\muhas\OneDrive\Desktop\GABİM
+
+3. Çalıştırın:
+   build.bat
+
+4. İşlem bitince şu dosyalar oluşur:
+   - dist\GabimKontrolProgram.exe
+   - installer_output\GabimKontrolProgram_Setup_v1.0.0.exe
+
+5. Setup dosyasını kullanıcılara dağıtın!
+
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  SORUN GİDERME                                                           █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+SORUN: "Python bulunamadı" hatası
+ÇÖZÜM: Python 3.7+ yükleyin: https://www.python.org/downloads/
+
+SORUN: "pip bulunamadı" hatası
+ÇÖZÜM: Python'u PATH'e eklenmiş şekilde yeniden yükleyin
+
+SORUN: PyInstaller hatası
+ÇÖZÜM:
+  pip install --upgrade pip
+  pip install -r requirements.txt
+
+SORUN: Antivirüs EXE'yi engelliyor
+ÇÖZÜM: Bu normal. EXE'yi güvenilir listesine ekleyin
+
+SORUN: EXE çalışmıyor
+ÇÖZÜM:
+  1. Windows Defender'ı kontrol edin
+  2. Yönetici olarak çalıştırmayı deneyin
+  3. Visual C++ Redistributable yükleyin
+
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  DOSYA YAPISI                                                            █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+GABİM/
+├── GabimKontrolProgram.exe          ← BUNU PAYLAŞIN (Kullanıcılar için)
+├── excel_kontrolor.py               ← Ana program kodu
+├── basit_build.bat                  ← Basit EXE oluşturma
+├── build.bat                        ← Profesyonel build
+├── README.md                        ← Ana dokümantasyon
+├── KURULUM_VE_DAGITIM.md            ← Detaylı kurulum bilgisi
+├── HIZLI_BASLANGIC.txt              ← Bu dosya
+└── requirements.txt                 ← Python bağımlılıkları
+
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  DAĞITIM SEÇENEKLERİ                                                     █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+1. USB ile:
+   GabimKontrolProgram.exe dosyasını USB'ye kopyalayın
+
+2. E-posta ile:
+   GabimKontrolProgram.exe dosyasını ZIP'leyip gönderin
+
+3. Network paylaşımı:
+   \\SUNUCU\Paylaşım\ klasörüne koyun
+
+4. Setup ile:
+   GabimKontrolProgram_Setup_v1.0.0.exe dosyasını dağıtın
+
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  ÖNEMLİ NOTLAR                                                           █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+✓ EXE dosyası tek başına çalışır, Python gerektirmez
+✓ Orijinal Excel dosyası değişmez, yeni dosya oluşturulur
+✓ Tüm değişiklikler .txt dosyasına kaydedilir
+✓ Windows 7/8/10/11 desteklenir
+✓ 64-bit işlemciler için optimize edilmiştir
+
+
+█████████████████████████████████████████████████████████████████████████████
+█                                                                           █
+█  İLETİŞİM VE DESTEK                                                      █
+█                                                                           █
+█████████████████████████████████████████████████████████████████████████████
+
+Detaylı bilgi için:
+- README.md dosyasını okuyun
+- KURULUM_VE_DAGITIM.md dosyasına bakın
+
+Program Versiyonu: 1.0.0
+Son Güncelleme: 30 Ekim 2025
+
+Yapımcı: A.R.E.A. GAYRİMENKUL DEĞERLEME VE DANIŞMANLIK A.Ş.
+
+
+================================================================================
+                              İYİ ÇALIŞMALAR!
+================================================================================
